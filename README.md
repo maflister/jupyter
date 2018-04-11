@@ -73,13 +73,13 @@ http://localhost:9454
 ```
 
 2. Open second terminal and run tunneling command from the output file:
-
+```
 $ ssh -L 9454:node01:9454 tester@node01
-
+```
 3. Open a browser and enter the URL from the output file:
-
+```
 http\://localhost:9454
-
+```
 4. Enter the token (long string after ?token=) from the output file.
 
 You should now be connected to your Jupyter Notebook that is running on a cluster compute node. To close the notebook, select Logout. If you need to reconnect, repeat steps. If you're done with your Notebook, remember to stop the job with qdel.
