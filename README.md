@@ -15,7 +15,6 @@ Example job script:
 # get tunneling info
 port=$(shuf -i8000-9999 -n1)
 node=$(hostname -s)
-jumphost=$(hostname)
 user=$(whoami)
 
 cd $PBS_O_WORKDIR
@@ -23,7 +22,7 @@ cd $PBS_O_WORKDIR
 # print tunneling instructions jupyter-log
 echo -e "
 MacOS or linux terminal command to create your ssh tunnel:
-ssh -L ${port}:${node}:${port} ${user}@${jumphost}
+ssh -L ${port}:${node}:${port} ${user}@$PBS_O_HOST
 
 Compute node: ${node}
 Remote port: ${port}
@@ -52,7 +51,7 @@ $ qsub jupyternb.pbs
 Example output file: jnb.o152668
 ```
 MacOS or linux terminal command to create your ssh tunnel:
-ssh -L 9454:node01:9454 tester@node01
+ssh -L 9454:node01:9454 tester@loginnode
 
 Compute node: node01
 Remote port: 9454
@@ -74,7 +73,7 @@ http://localhost:9454
 
 2. Open second terminal and run tunneling command from the output file:
 ```
-$ ssh -L 9454:node01:9454 tester@node01
+$ ssh -L 9454:node01:9454 tester@loginnode
 ```
 3. Open a browser and enter the URL from the output file:
 ```
