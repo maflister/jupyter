@@ -1,0 +1,13 @@
+{
+ "display_name": "Python 2 (TensorFlow 1.7)", 
+ "language": "python", 
+ "argv": ["/rcc/shared/apps/singularity/2.4.2/bin/singularity",
+  "exec", 
+  "/rcc/shared/apps/singularity/images/ubuntu-16.04_cuda-9.0_cudnn-7.0_tensorflow-gpu-1.7_latest.simg", 
+  "/usr/bin/python3",
+  "-m",
+  "ipykernel", 
+  "-f", 
+  "{connection_file}"
+ ]
+}
