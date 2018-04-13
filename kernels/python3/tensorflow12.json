@@ -1,5 +1,5 @@
 {
- "display_name": "Python 2 (TensorFlow 1.2)", 
+ "display_name": "Python 3 (TensorFlow 1.2)", 
  "language": "python", 
  "argv": ["/rcc/shared/apps/singularity/2.4.2/bin/singularity",
   "exec", 
