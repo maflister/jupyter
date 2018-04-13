@@ -11,22 +11,22 @@ From: ubuntu:latest
 %setup
     install -Dv \
     kernels/python2/tensorflow17.json \
-    ${SINGULARITY_ROOTFS}/usr/share/jupyter/kernels/python2/TensorFlow17/kernel.json
+    ${SINGULARITY_ROOTFS}/usr/share/jupyter/kernels/python2_TensorFlow17/kernel.json
     install -Dv \
     kernels/python2/tensorflow16.json \
-    ${SINGULARITY_ROOTFS}/usr/share/jupyter/kernels/python2/TensorFlow16/kernel.json
+    ${SINGULARITY_ROOTFS}/usr/share/jupyter/kernels/python2_TensorFlow16/kernel.json
     install -Dv \
     kernels/python2/tensorflow12.json \
-    ${SINGULARITY_ROOTFS}/usr/share/jupyter/kernels/python2/TensorFlow12/kernel.json
+    ${SINGULARITY_ROOTFS}/usr/share/jupyter/kernels/python2_TensorFlow12/kernel.json
     install -Dv \
     kernels/python3/tensorflow17.json \
-    ${SINGULARITY_ROOTFS}/usr/share/jupyter/kernels/python3/TensorFlow17/kernel.json
+    ${SINGULARITY_ROOTFS}/usr/share/jupyter/kernels/python3_TensorFlow17/kernel.json
     install -Dv \
     kernels/python3/tensorflow16.json \
-    ${SINGULARITY_ROOTFS}/usr/share/jupyter/kernels/python3/TensorFlow16/kernel.json
+    ${SINGULARITY_ROOTFS}/usr/share/jupyter/kernels/python3_TensorFlow16/kernel.json
     install -Dv \
     kernels/python3/tensorflow12.json \
-    ${SINGULARITY_ROOTFS}/usr/share/jupyter/kernels/python3/TensorFlow12/kernel.json
+    ${SINGULARITY_ROOTFS}/usr/share/jupyter/kernels/python3_TensorFlow12/kernel.json
 
 %post
     # make mount points
