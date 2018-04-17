@@ -50,25 +50,24 @@ $ qsub jupyternb.pbs
 
 Example output file: jnb.o152668
 ```
-MacOS or linux terminal command to create your ssh tunnel:
-ssh -L 9454:node01:9454 tester@loginnode
+1. SSH tunnel from your workstation using the following command:
 
-Compute node: node01
-Remote port: 9454
+   ssh -L 9623:node01:9623 tester@loginnode
 
-Use a Browser on your local machine to go to:
-http://localhost:9454
+   and point your web browser to http://localhost:9623.
 
-[I 17:59:45.913 NotebookApp] Serving notebooks from local directory: /home/tester/jupyter-test
-[I 17:59:45.913 NotebookApp] 0 active kernels
-[I 17:59:45.913 NotebookApp] The Jupyter Notebook is running at:
-[I 17:59:45.914 NotebookApp] http://node01:9454/?token=2dd17...
-[I 17:59:45.914 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-[C 17:59:45.920 NotebookApp]
+2. Copy/paste the token below when you connect for the first time.
+
+[I 18:24:35.251 NotebookApp] Serving notebooks from local directory: /home/tester/jupyter-test
+[I 18:24:35.251 NotebookApp] 0 active kernels
+[I 18:24:35.251 NotebookApp] The Jupyter Notebook is running at:
+[I 18:24:35.251 NotebookApp] http://node01:9623/?token=a2caff9717f5dcefc22c4c387fa0a02390d1ef71f0f3747d
+[I 18:24:35.251 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 18:24:35.256 NotebookApp]
 
     Copy/paste this URL into your browser when you connect for the first time,
     to login with a token:
-        http://node01:9454/?token=2dd17...
+        http://node01:9623/?token=a2caff9717f5dcefc22c4c387fa0a02390d1ef71f0f3747d
 ```
 
 2. Open second terminal and run tunneling command from the output file:
