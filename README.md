@@ -21,13 +21,13 @@ cd $PBS_O_WORKDIR
 
 # print tunneling instructions jupyter-log
 echo -e "
-MacOS or linux terminal command to create your ssh tunnel:
-ssh -L ${port}:${node}:${port} ${user}@$PBS_O_HOST
+1. SSH tunnel from your workstation using the following command:
+   
+   ssh -L ${port}:${node}:${port} ${user}@$PBS_O_HOST
+   
+   and point your web browser to http://localhost:${port}.
 
-Compute node: ${node}
-Remote port: ${port}
-Use a Browser on your local machine to go to:
-http://localhost:${port}
+2. Copy/paste the token below when you connect for the first time.
 "
 
 # load modules
