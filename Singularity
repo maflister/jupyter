@@ -1,5 +1,5 @@
 BootStrap: docker
-From: ubuntu:latest
+From: ubuntu:16.04
 
 %help
     This container runs a Jupyter Notebook on a compute node.
