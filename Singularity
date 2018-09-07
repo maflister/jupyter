@@ -18,6 +18,6 @@ From: ubuntu:latest
     #install python pkgs
     pip install --no-cache-dir --upgrade pip==9.0.3
     pip3 install --no-cache-dir --upgrade pip==9.0.3
-    pip install jupyter ipykernel scipy numpy pandas matplotlib
-    pip3 install jupyter ipykernel scipy numpy pandas matplotlib
+    pip install jupyter ipykernel scipy numpy pandas matplotlib biopython
+    pip3 install jupyter ipykernel scipy numpy pandas matplotlib biopython
 
