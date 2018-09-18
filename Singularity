@@ -13,7 +13,7 @@ From: ubuntu:latest
     mkdir -p /scratch/global /scratch/local /rcc/stor1/refdata /rcc/stor1/projects /rcc/stor1/depts
     # install deps
     apt-get update
-    apt-get -y install python3 python3-pip python python-pip
+    apt-get -y install python3 python3-pip python python-pip nodejs
     apt-get clean
     #install python pkgs
     pip install --no-cache-dir --upgrade pip==9.0.3
