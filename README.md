@@ -1,5 +1,5 @@
 # Jupyter Notebook
-[![https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg](https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg)](https://singularity-hub.org/collections/911)
+[![https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg](https://www.singularity-hub.org/static/img/hosted-singularity--hub-%23e32929.svg)](https://singularity-hub.org/collections/1264)
 
 Singularity container running latest Ubuntu and Jupyter Notebook.
 
@@ -16,14 +16,14 @@ Example job script:
 port=$(shuf -i8000-9999 -n1)
 node=$(hostname -s)
 user=$(whoami)
-
+submit_host=$(echo ${PBS_O_HOST%%.*}.rcc.mcw.edu)
 cd $PBS_O_WORKDIR
 
 # print tunneling instructions jupyter-log
 echo -e "
 1. SSH tunnel from your workstation using the following command:
    
-   ssh -L ${port}:${node}:${port} ${user}@$PBS_O_HOST
+   ssh -L ${port}:${node}:${port} ${user}@${submit_host}
    
    and point your web browser to http://localhost:${port}.
 
