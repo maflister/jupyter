@@ -12,12 +12,12 @@ From: ubuntu:16.04
     # make mount points
     mkdir -p /scratch/global /scratch/local /rcc/stor1/refdata /rcc/stor1/projects /rcc/stor1/depts
     # install deps
-    apt-get update
-    apt-get -y install python3 python3-pip python python-pip
+    apt-get update && apt-get install -y --no-install-recommends \
+        python3 \
+        python3-pip \
+        python \
+        python-pip 
     apt-get clean
-    #install nodejs
-    curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-    apt-get install -y nodejs
     #install python pkgs
     pip install --no-cache-dir --upgrade pip==9.0.3
     pip3 install --no-cache-dir --upgrade pip==9.0.3
