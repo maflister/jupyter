@@ -21,6 +21,6 @@ From: ubuntu:16.04
     #install python pkgs
     pip install --no-cache-dir --upgrade pip==9.0.3
     pip3 install --no-cache-dir --upgrade pip==9.0.3
-    pip install jupyter ipykernel scipy numpy pandas matplotlib biopython
-    pip3 install jupyter ipykernel scipy numpy pandas matplotlib biopython
+    pip install jupyter ipykernel scipy numpy pandas matplotlib biopython jupyterlab
+    pip3 install jupyter ipykernel scipy numpy pandas matplotlib biopython jupyterlab
 
