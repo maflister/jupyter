@@ -6,7 +6,6 @@ From: ubuntu:16.04
 
 %labels
     Maintainer Matthew Flister
-    Version v18.04
 
 %post
     # make mount points
@@ -14,9 +13,15 @@ From: ubuntu:16.04
     # install deps
     apt-get update && apt-get install -y --no-install-recommends \
         python3 \
+        python3-dev \
         python3-pip \
+        python3-setuptools \
         python \
-        python-pip 
+        python-dev \
+        python-pip \
+        python-setuptools \
+        build-essential \
+        gcc-multilib
     apt-get clean
     #install python pkgs
     pip install --no-cache-dir --upgrade pip==9.0.3
